@@ -29,5 +29,9 @@ namespace PokemonDeck.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<PokemonDeck.Models.Pokedex> Pokedexes { get; set; }
+
+        public System.Data.Entity.DbSet<PokemonDeck.Models.Pokemon> Pokemons { get; set; }
     }
 }
